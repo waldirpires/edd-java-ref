@@ -1,0 +1,6 @@
+// {type:class}
+// {direction:leftToRight}
+[TadCelula|int valor;TadCelula prox]
+[TadPilha|TadCelula topo; TadCelula fundo; int tamanho; int capacidade|empilhar(chave);desempilhar()]
+
+[TadPilha]->[TadCelula]
