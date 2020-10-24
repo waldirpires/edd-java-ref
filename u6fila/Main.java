@@ -1,12 +1,14 @@
 package u6fila;
 
-import u5pilha.TadPilha;
+import utils.JOptionPaneUtil;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        var fila = new TadFila(6);
+        var cap = JOptionPaneUtil.exibirJanelaDeEntrada("Digite a capacidade: ");
+
+        var fila = new TadFila(Integer.parseInt(cap));
 
         fila.exibir();
 

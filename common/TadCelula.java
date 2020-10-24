@@ -1,8 +1,11 @@
-package u6fila;
+package common;
 
+// Célula do encadeamento
 public class TadCelula {
-    int valor;
-    TadCelula prox;
+    // valor armazenado na célula
+    public int valor;
+    // referência para a próxima célula no encadeamento
+    public TadCelula prox;
 
     // construtor
     public TadCelula() {

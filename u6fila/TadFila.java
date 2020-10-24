@@ -1,5 +1,7 @@
 package u6fila;
 
+import common.TadCelula;
+
 public class TadFila {
 
     public static final int VAZIO = -1;

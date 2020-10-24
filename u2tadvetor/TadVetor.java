@@ -17,6 +17,10 @@ public class TadVetor {
 		// alocação dinâmica
 		this.v = new int[capacidade];
 		this.tamanho = 0;
+
+		if (capacidade > MAX) {
+			throw new RuntimeException("Capacidade superior ao limite permitido: " + MAX);
+		}
 		this.capacidade = capacidade;
 
 		// homework

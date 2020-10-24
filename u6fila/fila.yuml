@@ -1,0 +1,15 @@
+// {type:class}
+// {direction:leftToRight}
+
+[TadFila|tam=4;cap=6{bg:orange}]
+
+[Cabeça{bg:pink}]
+
+[TadFila]-frente>[Cabeça]
+[TadFila]-trás>[2]
+
+[Cabeça]->[4]
+[4]->[5]
+[5]->[6]
+[6]->[1]
+[1]->[2]
