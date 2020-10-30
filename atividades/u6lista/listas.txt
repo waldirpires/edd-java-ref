@@ -1,0 +1,131 @@
+
+Lista
+- primeiro
+- ultimo
+- valores
+- tamanho
+- capacidade
+
+LISTA (0/5)
+Primeiro [] Ultimo
+
+- inserir: primeiro, ultima posições
+- exibir
+- pesquisar(chave)
+- retirar: primeiro, ultima posições
+- inserir em posição específica
+- retirar em posição específica
+- inverter
+- inserirOrdenado
+- atualizar(indice, valor)
+
+X = 3 (inserir primeiro)
+LISTA (1/5)
+Primeiro [3] Ultimo
+
+X = 7 (inserir primeiro)
+LISTA (2/5)
+Primeiro [7, 3] Ultimo
+
+X = 4 (inserir primeiro)
+LISTA (3/5)
+Primeiro [4, 7, 3] Ultimo
+
+X = 6 (inserir primeiro)
+LISTA (4/5)
+Primeiro [6, 4, 7, 3] Ultimo
+
+X = 8 (inserir ultimo)
+LISTA (5/5)
+Primeiro [6, 4, 7, 3, 8] Ultimo
+
+X = 9 (inserir ultimo)
+LISTA (5/5)
+Primeiro [6, 4, 7, 3, 8] Ultimo
+
+Retirar Primeiro
+LISTA (4/5)
+Primeiro [4, 7, 3, 8] Ultimo
+->6
+
+Retirar Primeiro
+LISTA (3/5)
+Primeiro [7, 3, 8] Ultimo
+->4
+
+Retirar Ultimo
+LISTA (2/5)
+Primeiro [7, 3] Ultimo
+->8
+
+Retirar Ultimo
+LISTA (1/5)
+Primeiro [7] Ultimo
+->3
+
+Retirar Ultimo
+LISTA (0/5)
+Primeiro [] Ultimo
+->7
+
+Retirar Ultimo
+LISTA (0/5)
+Primeiro [] Ultimo
+
+Inserir em posição específica
+pos=2
+X=9
+LISTA (4/5)
+Primeiro [4, 7, 3, 8] Ultimo
+                *
+LISTA (5/10)
+Primeiro [4, 7, 9, 3, 8] Ultimo
+
+###
+Inserir em posição específica
+pos=1
+X=10
+LISTA (6/10)
+Primeiro [4, 10, 7, 9, 3, 8] Ultimo
+             *
+
+###
+Inserir em posição específica
+pos=4
+X=5
+LISTA (7/10)
+Primeiro [4, 10, 7, 9, 5, 3, 8] Ultimo
+                       *
+
+###
+Retirar em posição específica
+pos=0
+LISTA (6/10)
+Primeiro [10, 7, 9, 5, 3, 8] Ultimo
+          *
+->4
+
+###
+Retirar em posição específica
+pos=3
+LISTA (5/10)
+Primeiro [10, 7, 9, 3, 8] Ultimo
+                    *
+->5
+
+###
+Retirar em posição específica
+pos=5
+LISTA (5/10)
+Primeiro [10, 7, 9, 3, 8] Ultimo
+->-1
+
+###
+LISTA (5/10)
+Primeiro [10, 7, 9, 3, 8] Ultimo
+        *
+TEMP (5/10)
+Primeiro [8, 3, 9, 7, 10] Ultimo
+
+LISTA (5/10)
+Primeiro [8, 3, 9, 7, 10] Ultimo
