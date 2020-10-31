@@ -1,0 +1,10 @@
+// {type:class}
+// {direction:leftToRight}
+
+[Cabeca]
+[Primeiro]
+[Ultimo]
+
+[Primeiro]->[Cabeca]
+[Ultimo]->[Cabeca]
+[Cabeca]->[null]

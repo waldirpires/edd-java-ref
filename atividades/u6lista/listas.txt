@@ -13,9 +13,9 @@ Primeiro [] Ultimo
 - exibir
 - pesquisar(chave)
 - retirar: primeiro, ultima posições
+- inverter
 - inserir em posição específica
 - retirar em posição específica
-- inverter
 - inserirOrdenado
 - atualizar(indice, valor)
 
@@ -121,10 +121,11 @@ Primeiro [10, 7, 9, 3, 8] Ultimo
 ->-1
 
 ###
+Inverter lista
 LISTA (5/10)
 Primeiro [10, 7, 9, 3, 8] Ultimo
         *
-TEMP (5/10)
+TEMP (5/10) - inserir no ultimo
 Primeiro [8, 3, 9, 7, 10] Ultimo
 
 LISTA (5/10)

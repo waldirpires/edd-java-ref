@@ -1,37 +1,50 @@
 package u6fila;
 
-import utils.JOptionPaneUtil;
-
 public class Main {
 
     public static void main(String[] args) {
+        TadFila fila = new TadFila(6);
 
-        var cap = JOptionPaneUtil.exibirJanelaDeEntrada("Digite a capacidade: ");
+        int[] v = new int[] { 9, 3, 5, 1, 7, 4, 8, 2 };
+        for (int i = 0; i < v.length; i++) {
+            System.out.println("Enfileirando: " + v[i]);
 
-        var fila = new TadFila(Integer.parseInt(cap));
-
-        fila.exibir();
-
-        int []v = new int[]{6, 8, 2, 5, 9, 4, 1, 11};
-        for (int i : v) {
-            System.out.println("Enfileirando " + i);
-
-            fila.enfileirar(i);
+            fila.enfileirar(v[i]);
             fila.exibir();
         }
 
-        System.out.println("\nDesempilhando itens");
-        int i = 8;
-        while (i > 0) {
+        for (int i = 0; i < 8; i++) {
+            System.out.println("Desenfileirando . . .\n");
             int valor = fila.desenfileirar();
+
             if (valor == -1) {
-                System.out.println("Não foi possível desenfileirar.\n");
+                System.out.println("Não foi possível desenfileirar.");
             } else {
-                System.out.println("Desenfileirou: " + valor + "\n");
+                System.out.println("Desenfileirou: " + valor);
             }
+
             fila.exibir();
-            i--;
         }
+
+        System.out.println("\nTestando o fura-fila:\n");
+        fila.enfileirar(3);
+        fila.enfileirar(5);
+        fila.enfileirar(2);
+        fila.enfileirar(7);
+        fila.enfileirar(9);
+
         fila.exibir();
+
+        boolean resultado = fila.furarFila(4);
+
+        if (resultado) {
+            System.out.println("Esperto!");
+        } else {
+            System.out.println("Não conseguiu furar fila.");
+        }
+
+        fila.exibir();
+
+        fila.furarFila(6);
     }
 }

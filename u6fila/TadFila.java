@@ -25,7 +25,7 @@ public class TadFila {
         System.out.println(String.format("Tamanho/Capacidade: %d/%d\n", tamanho, capacidade));
         TadCelula aux = frente.prox;
         System.out.print("FRENTE: ");
-        while(aux != null) {
+        while (aux != null) {
             System.out.print(aux);
             aux = aux.prox;
         }
@@ -102,11 +102,23 @@ public class TadFila {
         return this.tras.valor;
     }
 
-    public boolean inserirFuraFila(int chave) {
-        return false;
-    }
-
     public void inverter() {
 
+    }
+
+    public boolean furarFila(int chave) {
+
+        if (estahCheia()) {
+            System.out.println("Fila está cheia!");
+            return false;
+        }
+
+        TadCelula aux = frente.prox;
+        TadCelula nova = new TadCelula(chave);
+        frente.prox = nova;
+        nova.prox = aux;
+        tamanho++;
+
+        return true;
     }
 }

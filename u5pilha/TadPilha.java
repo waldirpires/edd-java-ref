@@ -99,6 +99,32 @@ public class TadPilha {
         return topo.prox.valor;
     }
 
+    public boolean inverter2() {
+        TadPilha temp = new TadPilha(this.capacidade);
+        if (estahVazia()) {
+            System.out.println("Pilha está vazia!");
+            return false;
+        }
+
+        if (tamanho == 1) {
+            System.out.println("Pilha possui somente 1 elemento!");
+            return false;
+        }
+
+        // enquanto a pilha atual não estiver vazia
+        while (!this.estahVazia()) {
+            // desempilha da atual, empilha na temporária
+            temp.empilhar(this.desempilhar());
+        }
+
+        // transfere topo e fundo da pilha temp para a pilha corrente
+        this.topo = temp.topo;
+        this.fundo = temp.fundo;
+        this.tamanho = temp.tamanho;
+
+        return true;
+    }
+
     public void inverter() {
 
         TadCelula prev, cur, succ;

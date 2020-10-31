@@ -1,0 +1,22 @@
+// {type:class}
+// {direction:leftToRight}
+
+[TadPilha|tam=0;cap=6{bg:green}]
+[Cabeça{bg:orange}]
+
+[7]
+[Cabeça]->[Null]
+
+[TadPilha Temp|Tam=4;Cap=6{bg:yellow}]
+
+[TadPilha Temp]-Fundo>[4]
+[TadPilha Temp]-Topo>[Cabeça2{bg:orange}]
+
+[Cabeça2]->[7]
+[7]->[8]
+[8]->[3]
+[3]->[4]
+[4]->[null]
+
+[TadPilha]-Topo>[Cabeça2]
+[TadPilha]-Fundo>[4]
