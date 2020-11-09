@@ -102,8 +102,40 @@ public class TadFila {
         return this.tras.valor;
     }
 
+    /**
+     * Permite inverter a fila.
+     */
     public void inverter() {
 
+    }
+
+    /**
+     * Altera um valor existente na fila (de original para o novo).
+     *
+     * ex: fila.alterar(3, 7); altera do 3 para o 7.
+     *
+     * @return true se a alteração for bem sucedida, false o contrário
+     */
+    public boolean alterarValor(int original, int novo) {
+        return false;
+    }
+
+    /**
+     * Permite desenfileirar quem está na frente e colocá-lo atrás da fila.
+     *
+     * @return true se a troca for bem sucedida, false o contrário
+     */
+    public boolean jogarFrenteParaTras() {
+        return false;
+    }
+
+    /**
+     * Permite colocar quem está atrás na fila na sua frente.
+     *
+     * @return true se a troca for bem sucedida, false o contrário
+     */
+    public boolean jogarTrasParaFrente() {
+        return false;
     }
 
     public boolean furarFila(int chave) {

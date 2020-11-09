@@ -1,0 +1,33 @@
+// {type:class}
+// {direction:leftToRight}
+
+//[TAD Célula|valor;prox]
+
+[Célula\nCabeça]
+
+[TAD Fila|t=3;c=4|enfileirar();desenfileirar();obterFrente();obterTras()]
+
+[TAD Fila]-tras>[7]
+[TAD Fila]-frente>[Célula\nCabeça]
+// emfileiramento
+[Célula\nCabeça]->[5]
+
+[5]->[3]
+[3]->[7]
+[7]->[null]
+
+// desenfileiramento
+//[aux]->[7]
+
+// Inverter
+// FRENTE [5, 2, 7, 1, 3] TRAS
+// FRENTE [3, 1, 7, 2, 5] TRAS
+
+[TAD Pilha|tam=0;cap=4|push();pop();peek()]
+
+[TAD Pilha]-topo>[nova]
+[TAD Pilha]-fundo>[nova]
+//[X]->[null2]
+
+[7]
+[nova]->[null2]
