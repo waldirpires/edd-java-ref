@@ -1,0 +1,17 @@
+
+
+TAD Lista
+- inserir primeiro
+- inserir ultimo
+- inserir no meio
+- retirar do primeiro
+- retirar do último
+- retirar do meio
+
+TAD Pilha: LIFO
+- inserir primeiro
+- retirar do primeiro
+
+TAD Fila: FIFO
+- inserir ultimo
+- retirar do primeiro

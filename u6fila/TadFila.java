@@ -78,6 +78,12 @@ public class TadFila {
         return aux.valor;
     }
 
+    /**
+     * Permite efetuar a pesquisa na fila por uma chave.
+     *
+     * @param chave o valor a ser pesquisado
+     * @return true se a chave existir na fila, false o contrário
+     */
     public boolean pesquisar(int chave) {
         return false;
     }

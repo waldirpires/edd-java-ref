@@ -1,0 +1,109 @@
+TAD Fila
+- FRENTE
+- TRÁS
+- tamanho
+- capacidade
+
+
+célula cabeça: [X]
+
+TAD Fila (0/4)
+FRENTE -> [X] <- TRÁS
+
+###
+Enfileirar: 4
+TAD Fila (1/4)
+FRENTE -> [X] -> [4] <- TRÁS
+
+###
+Enfileirar: 7
+TAD Fila (2/4)
+FRENTE -> [X] -> [4] -> [7] <- TRÁS
+
+###
+Enfileirar: 2
+TAD Fila (3/4)
+FRENTE -> [X] -> [4] -> [7] -> [2] <- TRÁS
+
+###
+Enfileirar: 8
+TAD Fila (4/4)
+FRENTE -> [X] -> [4] -> [7] -> [2] -> [8] <- TRÁS
+
+###
+Desenfileirar
+TAD Fila (3/4)
+FRENTE -> [X] -> [7] -> [2] -> [8] <- TRÁS
+AUX -> [4]
+
+###
+Desenfileirar
+TAD Fila (2/4)
+FRENTE -> [X] -> [2] -> [8] <- TRÁS
+AUX -> [7]
+
+###
+Desenfileirar
+TAD Fila (1/4)
+FRENTE -> [X] -> [8] <- TRÁS
+AUX -> [2]
+
+###
+Desenfileirar
+TAD Fila (0/4)
+FRENTE -> [X] <- TRÁS
+AUX -> [8]
+
+###
+Pesquisar: 3?
+TAD Fila (4/4)
+FRENTE -> [X] -> [4] -> [7] -> [2] -> [8] <- TRÁS
+                                               3
+FALSE
+
+###
+Inverter:
+TAD Fila (4/4) FIFO
+FRENTE -> [X] -> [8] -> [2] -> [7] -> [4] <- TRÁS
+
+TAD Pilha (0/4) LIFO
+TOPO -> [X] <- FUNDO
+
+
+
+Resultado:
+FRENTE -> [X] -> [8] -> [2] -> [7] -> [4] <- TRÁS
+
+###
+Alterar valor: 4, 5
+TAD Fila (4/4) FIFO
+FRENTE -> [X] -> [8] -> [2] -> [7] -> [5] <- TRÁS
+                                       *
+
+###
+Jogar frente para trás
+TAD Fila (4/4) FIFO
+FRENTE -> [X] -> [8] -> [2] -> [7] -> [5] <- TRÁS
+- Desenfileirar
+TAD Fila (3/4) FIFO
+FRENTE -> [X] -> [2] -> [7] -> [5] <- TRÁS
+[8] ->
+- Enfileirar
+TAD Fila (4/4) FIFO
+FRENTE -> [X] -> [2] -> [7] -> [5] -> [8] <- TRÁS
+
+
+### Jogar trás para a frente
+TAD Fila (1/4) FIFO
+FRENTE -> [X] -> [8] <- TRÁS
+
+TAD Fila Aux (4/4)
+FRENTE -> [X] -> [8] -> [2] -> [7] -> [5] <- TRÁS
+
+Resultado:
+TAD Fila (1/4) FIFO
+FRENTE -> [X] -> [8] -> [2] -> [7] -> [5] <- TRÁS
+
+this.frente = temp.frente;
+this.tras = temp.tras;
+this.tamanho = temp.tamanho;
