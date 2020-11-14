@@ -52,7 +52,8 @@ digraph G {
 
 [Main]->[TadArvore]
 
-(http://yuml.me/af3b5479.jpg)
+![UML](http://yuml.me/af3b5479.jpg)
+
 
 # http://www.graphviz.org/content/cluster
 
